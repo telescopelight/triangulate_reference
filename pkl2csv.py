@@ -31,5 +31,11 @@ if __name__ == "__main__":
     pickle_file_path = '3d_points.pkl'  # 피클 파일 경로
     csv_file_path = '3d_points.csv'     # CSV 파일 경로
 
-    pickle_to_csv(pickle_file_path, csv_file_path)
+    pickle_file_path1 = 'centroids_left.pkl'  # 피클 파일 경로
+    csv_file_path1 = 'centroids_left.csv'     # CSV 파일 경로
+
+    pickle_file_path2 = 'centroids_right.pkl'  # 피클 파일 경로
+    csv_file_path2 = 'centroids_right.csv'     # CSV 파일 경로
+
+    pickle_to_csv(pickle_file_path2, csv_file_path2)
     print(f"Data from {pickle_file_path} has been converted to {csv_file_path}")

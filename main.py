@@ -11,7 +11,7 @@ import pickle
 import get_yellow_point
 from fined_single_calibration import calibrate_camera
 from fined_stereo_calibration import stereo_calibrate
-import plot_maker
+import matcode
 from datetime import datetime
 
 #기본 인자 지정
@@ -74,7 +74,7 @@ else:
     print_file_creation_date('./output/3d_points.pkl')
 #플롯 출력
 if os.path.exists('./output/3d_points.pkl'):
-    plot_maker.run('./output/3d_points.pkl')
+    matcode.run_with_matlab_engine('./output/3d_points.pkl')
     print('3d 플롯 : 출력 완료')
 else:
     print('치명적 오류')
